@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useKV } from '@github/spark/hooks'
-import { ParticleCanvas } from '@/components/ParticleCanvas'
 import { GrimeOverlay } from '@/components/GrimeOverlay'
 import { StickyHeader } from '@/components/StickyHeader'
 import { SurfaceSelector } from '@/components/SurfaceSelector'
@@ -24,7 +23,6 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-background">
-      <ParticleCanvas />
       <GrimeOverlay texture={surface} />
       <StickyHeader />
 
